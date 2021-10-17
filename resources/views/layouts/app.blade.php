@@ -9,12 +9,6 @@
 </head>
 <body>
     @include('partials.header', ['logo' => 'Danial Janboura'])
-=======
-    <title>Roduan Kareem Aldeen @yield('title')</title>
-</head>
-<body>
-    @include('partials.header', ['logo' => 'Roduan Kareem Aldeen'])
->>>>>>> 5d9d1453337e2144d7c02c748063d2bd68970c96
     <main>
         @yield('content')
     </main>
