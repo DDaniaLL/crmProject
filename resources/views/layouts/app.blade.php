@@ -7,7 +7,7 @@
     <title>Danial Janboura @yield('title')</title>
 </head>
 <body>
-    @include('partials.header', ['logo' => 'Danial Janboura - Project'])
+    @include('partials.header', ['logo' => 'Danial Janboura'])
     <main>
         @yield('content')
     </main>
