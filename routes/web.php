@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\PostCommentController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\TagController;
 use Illuminate\Support\Facades\Route;
@@ -25,3 +26,5 @@ Route::resource('posts', PostController::class);
 Route::resource('tags', TagController::class);
 
 Route::resource('categories', CategoryController::class);
+
+Route::resource('posts.comments', PostCommentController::class)->except(['show', 'index', 'create']);
