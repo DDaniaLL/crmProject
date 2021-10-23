@@ -1,4 +1,5 @@
 <div>
+    <hr>
     <a href="{{ route('posts.show', $post) }}">
         <h4>{{ $post->title }}</h4>
     </a>

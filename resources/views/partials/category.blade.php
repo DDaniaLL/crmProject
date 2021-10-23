@@ -1,4 +1,5 @@
 <div>
+    <hr>
     <a href="{{ route('categories.show', $category) }}">
         <h4>{{ $category->name }}</h4>
     </a>
