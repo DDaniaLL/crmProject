@@ -11,6 +11,20 @@
             <input type="text" name="title">
         </label>
         <br>
+
+        <select name="category_id">
+            @foreach ($categories as $category)
+                <option value="{{$category->id}}">{{$category->name}}</option>
+            @endforeach
+        </select>
+
+        <select name="tags[]" multiple>
+            @foreach ($tags as $tag)
+            <option value="{{$tag->id}}">{{$tag->name}}</option>
+            @endforeach
+        </select>
+
+        <br>
         <label>
             <p>Content:</p>
             <textarea name="content" cols="30" rows="10"></textarea>

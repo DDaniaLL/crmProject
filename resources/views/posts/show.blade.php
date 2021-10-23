@@ -4,7 +4,10 @@
 
 @section('content')
     <h3>{{ $post->title }}</h3>
-    {{-- <h4>Category: {{ $post->category->name }}</h4> --}}
+    <h4>Category: {{ $post->category->name }}</h4>
+    <br>
+
+    <h4>Tags: {{ $post->tags()->get()}}</h4>
     <h6><a href="{{ route('posts.edit', $post) }}">edit</a></h6>
     <h6>
         <form action="{{ route('posts.destroy', $post) }}" method="POST">
